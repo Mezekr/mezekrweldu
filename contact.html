@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>about me</title>
         <link rel="short icon" href="img/favicon-32x32.png" type="image/x-icon">
     </head>
     <body>
-         <!-- This the header part-->
+        <!-- This the header part-->
         <header>
             <img src="img/logo-202x48.png" alt="My logo ">
             <nav>
@@ -22,17 +24,49 @@
                 Examplestraße 01 <br>
                 09xxx Freiberg <br>
                 Deutschland <br>
-                <br>
                 Tel: <a href="tel:+491521615243">+491521615243</a> <br>
-                Email: <a href="mailto:examplamail@tuta.com">examplamail@tuta.com</a> <br>
+                Email: <a
+                    href="mailto:examplamail@tuta.com">examplamail@tuta.com</a>
+                <br>
                 <a href="mailto:examplamail@tuta.com">Contact me</a>
             </div>
+            <h1> Subscribe to my new newsletter </h1>
+            <form action="/user-registration-form.html" method="post">
+              <fieldset>
+                <legend> Personal Data </legend>
+                <label for="firstname">Enter your First name:
+                    <input type="text" id="firstname" name="firstname" required> <br>
+                </label>
+                <br>
+                <label for="lastname">Enter your Last name:
+                    <input type="text" id="lastname" name="lastname" required> <br>
+                </label>
+                <br>
+                <label for="age">Enter your your Age:
+                    <input type="number" id="age" name="age" required min="13"><br>
+                </label>
+                <br>
+                <label for="phone-number">Enter your phone number:
+                    <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+                </label>
+                <br>
+                <label for="email">Enter your email:
+                    <input type="email" id="email" name="email" required> <br>
+                </label>
+                <br>
+                <label for="comment">Leave a Comment
+                    <textarea id="comment" name="comment" rows="5" cols="20"></textarea> <br>
+                </label>
+                <br>
+                <button type="submit" name="submit" value="Submit"> Submit </button><br>
+              </fieldset>
+            </form>
         </main>
 
         <footer>
             <p>Follo me </p>
             <div>
-                <a href="https://github.com/"  target="_blank">
+                <a href="https://github.com/" target="_blank">
                     <img src="img/github_icon.svg" alt="github icon">
                 </a>
                 <a href="https://www.linkedin.com/" target="_blank">
@@ -41,4 +75,5 @@
             </div>
         </footer>
     </body>
+
 </html>
