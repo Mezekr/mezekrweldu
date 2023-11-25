@@ -1,0 +1,15 @@
+/*
+color used
+ Text color (): ##3c3c3c
+ Primary color (): #21675e
+ Secondary color (black): #ffa500
+*/
+
+body,
+header,
+nav {
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 1.6;
+}
