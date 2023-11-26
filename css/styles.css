@@ -3,13 +3,67 @@ color used
  Text color (): ##3c3c3c
  Primary color (): #21675e
  Secondary color (black): #ffa500
+ link color (SteelBlue) : #4682B4
+background color (Gainsboro): #dcdcdc
+Lime #00FF00
+
 */
 
-body,
-header,
-nav {
+body {
 	font-family: "Poppins", sans-serif;
-	font-weight: 300;
+	background-color: #dcdcdc;
+	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.6;
+}
+table,
+thead,
+tbody,
+tfoot,
+th,
+td {
+	border: 1px solid #dddddd;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+a {
+	color: #1e90ff;
+}
+a:visited {
+	color: #dc143c;
+}
+a:hover,
+a:focus {
+	text-decoration: none;
+	color: #228b22;
+}
+a:active {
+	color: deeppink;
+}
+
+button {
+	background-color: #008cba;
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: inherit;
+	cursor: pointer;
+	margin: 10px;
+	padding: 15px 32px;
+}
+
+button:hover,
+button:focus {
+	background-color: #ffcc00;
+	color: rgb(0, 0, 0);
+	font-weight: 900;
+	opacity: 0.7;
+}
+
+button:active {
+	background-color: chocolate;
+	color: white;
 }
