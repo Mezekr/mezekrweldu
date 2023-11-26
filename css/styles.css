@@ -27,6 +27,7 @@ body {
 	display: flex;
 	width: 100%;
 	padding: 20px;
+	border-bottom: #b0b7c0 1px solid;
 }
 .page-header_item {
 	flex: 0 1 200px;
@@ -46,7 +47,7 @@ body {
 .profile {
 	max-width: 700px;
 	margin: 0 auto;
-	border: #0066ff 2px solid;
+	/*border: #0066ff 2px solid;*/
 }
 .profile_portrait {
 	float: left;
@@ -76,6 +77,7 @@ td {
 	border: 1px solid #362f2f;
 	border-collapse: collapse;
 	text-align: center;
+	margin: auto;
 }
 
 a {
@@ -124,7 +126,19 @@ button:active {
 	/*grid-template-columns: 300px 300px;*/
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 10px;
+	margin: auto;
+	width: 85%;
 }
 .grid-layout_item {
-	background-color: #cad9dd;
+	background-color: #fffaf0;
+}
+
+#registration-form {
+	width: 30%;
+	margin: auto;
+}
+
+.skills-list li {
+	list-style: none;
+	text-align: center;
 }
