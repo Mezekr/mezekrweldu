@@ -11,7 +11,7 @@ Lime #00FF00
 
 body {
 	font-family: "Poppins", sans-serif;
-	background-color: #dcdcdc;
+	background-color: #ffffff;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.6;
@@ -28,10 +28,10 @@ td {
 }
 
 a {
-	color: #1e90ff;
+	color: #0066ff;
 }
 a:visited {
-	color: #dc143c;
+	color: #ff6600;
 }
 a:hover,
 a:focus {
@@ -43,7 +43,7 @@ a:active {
 }
 
 button {
-	background-color: #008cba;
+	background-color: #0080aa;
 	border: none;
 	color: white;
 	text-align: center;
