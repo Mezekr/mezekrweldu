@@ -118,3 +118,13 @@ button:active {
 	background-color: chocolate;
 	color: white;
 }
+
+.grid-layout {
+	display: grid;
+	/*grid-template-columns: 300px 300px;*/
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 10px;
+}
+.grid-layout_item {
+	background-color: #cad9dd;
+}
