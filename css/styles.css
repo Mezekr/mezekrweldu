@@ -121,7 +121,8 @@ button:active {
 	color: white;
 }
 
-.grid-layout {
+/*css for index page */
+.projects-grid-container {
 	display: grid;
 	/*grid-template-columns: 300px 300px;*/
 	grid-template-columns: 1fr 1fr;
@@ -129,7 +130,7 @@ button:active {
 	margin: auto;
 	width: 85%;
 }
-.grid-layout_item {
+.projects-grid-item {
 	background-color: #fffaf0;
 }
 
