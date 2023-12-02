@@ -143,3 +143,29 @@ button:active {
 	list-style: none;
 	text-align: center;
 }
+
+/* media queries */
+@media (max-width: 500px) {
+	.projects-grid-container {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (min-width: 500px) and (max-width: 750px) {
+	.projects-grid-container {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 750px) {
+	.projects-grid-container {
+		grid-gap: 10px;
+	}
+	.projects-grid-item:last-child {
+		grid-column: auto / auto;
+		grid-row: auto / auto;
+	}
+	h1 {
+		font-size: 22px;
+	}
+}
