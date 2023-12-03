@@ -178,3 +178,44 @@ button:active,
 		font-size: 18px;
 	}
 }
+
+@keyframes color-change {
+	0% {
+		fill: #f1b90f;
+	}
+	50% {
+		fill: #ebed9a;
+	}
+	100% {
+		fill: #f76414;
+	}
+}
+.sun {
+	animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+	0% {
+		transform: translate(0, 50px);
+	}
+	100% {
+		transform: translate(200px, 50px);
+	}
+}
+
+.cloud-front {
+	animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+	from {
+		transform: translate(446px, 48px);
+	}
+	to {
+		transform: translate(100px, 48px);
+	}
+}
+
+.cloud-back {
+	animation: 35s cloud-move-reverse infinite alternate linear;
+}
