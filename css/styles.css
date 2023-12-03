@@ -77,7 +77,8 @@ td {
 	border: 1px solid #362f2f;
 	border-collapse: collapse;
 	text-align: center;
-	margin: auto;
+	margin: 1.5em auto;
+	padding: 0.5em;
 }
 
 a {
@@ -95,7 +96,8 @@ a:active {
 	color: deeppink;
 }
 
-button {
+button,
+.button {
 	background-color: #0080aa;
 	border: none;
 	color: white;
@@ -106,17 +108,23 @@ button {
 	cursor: pointer;
 	margin: 10px;
 	padding: 15px 32px;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+	transition-duration: 0.2s;
+	transition-property: opacity;
 }
 
 button:hover,
-button:focus {
+button:focus,
+.button:hover,
+.button:focus {
 	background-color: #ffcc00;
 	color: rgb(0, 0, 0);
-	font-weight: 900;
-	opacity: 0.7;
+	font-weight: bold;
+	opacity: 0.8;
 }
 
-button:active {
+button:active,
+.button:active {
 	background-color: chocolate;
 	color: white;
 }
@@ -124,7 +132,6 @@ button:active {
 /*css for index page */
 .projects-grid-container {
 	display: grid;
-	/*grid-template-columns: 300px 300px;*/
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 10px;
 	margin: auto;
