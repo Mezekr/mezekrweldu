@@ -69,6 +69,34 @@ body {
 	/* background-color: #228b22; */
 }
 
+.contact-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: center;
+	/* align-items: center; */
+	margin: 1em auto;
+	padding: auto;
+	gap: 25px;
+	max-width: 500px;
+	/*border: 2px solid #f76414;*/
+}
+.personal-contact {
+	margin: 1em auto;
+	padding: 1em auto;
+	/*border: 2px solid #f1b90f;*/
+}
+.form-container {
+	/* text-align: center; */
+	margin: 1em auto;
+	padding: 1em;
+}
+#contact-form {
+	width: 400px;
+	text-align: center;
+	margin: 1em auto;
+	padding: 1em;
+}
 .page-footer {
 	clear: both;
 	display: flex;
@@ -153,11 +181,6 @@ button:active,
 	background-color: #fffaf0;
 }
 
-#registration-form {
-	width: 30%;
-	margin: auto;
-}
-
 .skills-list li {
 	list-style: none;
 	text-align: center;
@@ -173,6 +196,18 @@ button:active,
 		max-width: 310px;
 		margin: 5px auto;
 	}
+	.contact-container {
+		/* max-width: 300px; */
+		margin: 5px auto;
+		padding: 3px auto;
+		align-items: center;
+	}
+	/* #contact-form { */
+	/* width: 50%; */
+	/* margin: 1px; */
+	/* padding: 1px; */
+	/* font-size: 10px; */
+	/* } */
 }
 
 @media (min-width: 500px) and (max-width: 750px) {
