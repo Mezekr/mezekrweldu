@@ -143,6 +143,9 @@ footer {
 	align-items: center;
 	gap: 20px;
 }
+svg {
+	width: 60%;
+}
 .page-footer .social-media a img {
 	width: 50px;
 	height: 50px;
@@ -159,17 +162,10 @@ main .about-wrapper {
 	justify-content: space-around;
 	align-items: center;
 	align-content: center;
-	width: 95%;
+	max-width: 95%;
 	margin: auto;
 	padding: 40px 1px 80px 1px;
 	gap: 40px;
-}
-svg,
-table {
-	width: 60%;
-}
-table {
-	width: 60%;
 }
 
 table,
@@ -184,6 +180,7 @@ td {
 	margin: 0em 0.1em;
 	padding: 0.5em;
 }
+
 th {
 	background-color: #4ca0e4;
 }
@@ -198,6 +195,18 @@ tr:hover {
 caption {
 	caption-side: bottom;
 	font-size: small;
+}
+
+.skills-list {
+	margin: 5px auto;
+	padding: 0;
+}
+
+.skills-list li {
+	list-style: none;
+	text-align: center;
+	margin: 0.1em auto;
+	padding: 0.5em;
 }
 a {
 	color: var(--linkColor);
@@ -264,18 +273,6 @@ button:active,
 	background-color: var(--gridBgColor);
 	margin: 10px;
 	padding: 0 50px 50px 50px;
-}
-
-.skills-list {
-	margin: 5px auto;
-	padding: 0;
-}
-
-.skills-list li {
-	list-style: none;
-	text-align: center;
-	margin: 0.1em auto;
-	padding: 0.5em;
 }
 
 /* media queries */
