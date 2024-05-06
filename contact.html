@@ -1,85 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>about me</title>
-        <link rel="short icon" href="img/favicon-32x32.png" type="image/x-icon">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="stylesheet" href="css/style.production.css">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about me</title>
+    <link rel="short icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/style.production.css">
 
-    <body>
-        <!-- This the header part-->
-        <header class="page-header">
-            <img src="img/logo-202x48.png" class="page-header_item"
-                alt="Personal logo of Mezekr, a text logo with my name">
-            <nav class="main-navigation page-header_item">
-                <ul role="menubar" class="navigation-list">
-                    <li role="presentation">
-                        <a href="index.html" role="menuitem"
-                            class="navigation-list_item ">Home</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="about.html" role="menuitem"
-                            class="navigation-list_item ">About</a>
-                    </li>
-                    <li role="presentation"><a href="contact.html"
-                            role="menuitem"
-                            class="navigation-list_item navigation-list_item--active">Contact</a>
-                    </li>
-                    <li role="presentation"><a href="work.html" role="menuitem"
-                            class="navigation-list_item">Work</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
 
-        <!-- This the main part-->
-        <main>
-            <section class="contact-container">
-                <h1>Contact</h1>
-                <p>Many thanks for taking the time to visit my portfolio. If you
-                    require any further information or wish to get in touch with
-                    me, please see my contact details below.</p>
+</head>
+
+<body>
+    <!-- This the header part-->
+    <header class="page-header">
+        <img src="img/logo-202x48.png" class="page-header_item"
+            alt="Personal logo of Mezekr, a text logo with my name">
+        <nav class="main-navigation page-header_item">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="index.html" role="menuitem"
+                        class="navigation-list_item ">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="about.html" role="menuitem"
+                        class="navigation-list_item ">About</a>
+                </li>
+                <li role="presentation"><a href="contact.html" role="menuitem"
+                        class="navigation-list_item navigation-list_item--active">Contact</a>
+                </li>
+                <li role="presentation"><a href="work.html" role="menuitem"
+                        class="navigation-list_item">Work</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- This the main part-->
+    <main>
+        <section class="contact-container">
+            <h1>Contact me</h1>
+            <div class="contact-detail">
+                <p>Many thanks for taking the time to visit my portfolio. <br>
+                    If you require any further information or wish to get in
+                    touch
+                    with me, <br>
+                    please see my contact details below.</p>
                 <div class="personal-contact">
-                    Mezekr w. <br>
-                    Examplestraße 01 <br>
-                    09xxx Freiberg <br>
-                    Germany<br>
-                    <br>
                     Telephone number: <a
-                        href="tel:+49-152-1615243">+491521615243</a> <br>
+                        href="tel:+49-152-1615243">+491512345678</a> <br>
                     Email: <a
-                        href="mailto:examplamail@tuta.com">testemail@tuta.com</a>
+                        href="mailto:mezekr.w@tuta.com">mezekr.w@tuta.com</a>
                 </div>
-                <div>
-                    <a href="mailto:examplamail@tuta.com" class="button">Contact
-                        me</a>
-                </div>
-            </section>
-        </main>
-
-        <!-- This the footer part-->
-        <footer class="page-footer">
-            <p>Follow me on </p>
-            <div class="social-media">
-                <a href="https://github.com/" target="_blank">
-                    <img src="img/github_icon.svg" alt="github icon">
-                </a>
-                <a href="https://www.linkedin.com/" target="_blank">
-                    <img src="img/linkedin_icon.svg" alt="linked icon">
-                </a>
+                <!-- <div>
+                <a href="mailto:mezekr.w@tuta.com" class="button">Contact
+                    me</a>
+            </div> -->
             </div>
-        </footer>
-        <script src="js/tota11y.min.js"></script>
-    </body>
+
+            <h2>Or</h2>
+
+            <div class="form-container">
+                <div class="form">
+                    <span class="heading">Get in touch</span>
+                    <input placeholder="Name" type="text" class="input">
+                    <input placeholder="Email" id="mail" type="email"
+                        class="input">
+                    <textarea placeholder="Say Hello" rows="10" cols="30"
+                        id="message" name="message" class="textarea"></textarea>
+                    <div class="button-container">
+                        <div class="send-button">Send</div>
+                        <!-- <div class="reset-button-container">
+                        <div id="reset-btn" class="reset-button">Reset</div>
+                    </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- This the footer part-->
+    <footer class="page-footer">
+        <p>Follow me on </p>
+        <div class="social-media">
+            <a href="https://github.com/" target="_blank">
+                <img src="img/github_icon.svg" alt="github icon">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="img/linkedin_icon.svg" alt="linked icon">
+            </a>
+        </div>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
+</body>
 
 </html>
