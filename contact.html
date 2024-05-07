@@ -13,7 +13,7 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="css/style.production.css">
+    <link rel="stylesheet" href="css/styles.css">
 
 
 </head>
@@ -46,43 +46,49 @@
     <!-- This the main part-->
     <main>
         <section class="contact-container">
-            <h1>Contact me</h1>
-            <div class="contact-detail">
-                <p>Many thanks for taking the time to visit my portfolio. <br>
-                    If you require any further information or wish to get in
-                    touch
-                    with me, <br>
-                    please see my contact details below.</p>
-                <div class="personal-contact">
-                    Telephone number: <a
-                        href="tel:+49-152-1615243">+491512345678</a> <br>
-                    Email: <a
-                        href="mailto:mezekr.w@tuta.com">mezekr.w@tuta.com</a>
-                </div>
-                <!-- <div>
-                <a href="mailto:mezekr.w@tuta.com" class="button">Contact
-                    me</a>
-            </div> -->
+            <h1>Get in touch with me</h1>
+            <div class="contact-text">
+                <p>
+                    I'm really grateful that you took the time to visit my
+                    portfolio. If there's anything else I can help you with or
+                    you'd like to get in touch, just use the form below to send
+                    me a message and I'll get back to you as soon as I can.
+                </p>
             </div>
-
-            <h2>Or</h2>
-
             <div class="form-container">
-                <div class="form">
-                    <span class="heading">Get in touch</span>
-                    <input placeholder="Name" type="text" class="input">
-                    <input placeholder="Email" id="mail" type="email"
+                <form action="https://api.web3forms.com/submit" method="POST"
+                    class="form">
+
+                    <input type="hidden" name="access_key"
+                        value="c594d040-cfcc-45db-a35d-3d094928c1fa">
+                    <!-- Email notifications messages     -->
+                    <input type="hidden" name="from_name"
+                        value="From my Portfolio Website">
+
+                    <!--  for message subject -->
+                    <input type="hidden" name="subject">
+
+                    <input type="text" name="name" placeholder="Your Name"
+                        required class="input">
+                    <input type="email" name="email" placeholder="Your Email"
+                        required id="mail" class="input">
+                    <input type="text" name="subject" placeholder="Subject"
                         class="input">
-                    <textarea placeholder="Say Hello" rows="10" cols="30"
-                        id="message" name="message" class="textarea"></textarea>
+                    <textarea name="message" placeholder="Type your message"
+                        rows="20" cols="40" required
+                        class="textarea"></textarea>
+
+                    <input type="hidden" name="redirect"
+                        value="https://web3forms.com/success">
+
                     <div class="button-container">
-                        <div class="send-button">Send</div>
-                        <!-- <div class="reset-button-container">
-                        <div id="reset-btn" class="reset-button">Reset</div>
-                    </div> -->
+                        <button type="submit" class="send-button">
+                            Send Message
+                        </button>
                     </div>
-                </div>
+                </form>
             </div>
+
         </section>
     </main>
 
