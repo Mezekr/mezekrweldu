@@ -1,3 +1,14 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
 body {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', 'Poppins', sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-size: 20px;
 }
