@@ -174,8 +174,27 @@ header {
 	}
 }
 
+h1 {
+	font-size: 64px;
+	line-height: 1;
+	margin-bottom: 10px;
+	small {
+		display: block;
+		font-weight: 100;
+	}
+
+	@media (max-width: 1024px) {
+		font-size: 48px;
+	}
+}
 .hero {
 	display: flex;
+
+	/* to stack the hero section elements */
+	@media (max-width: 1024px) {
+		flex-direction: column;
+	}
+
 	.hero-blue {
 		flex: 1;
 		background-color: var(--blue-100);
@@ -184,6 +203,36 @@ header {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		p {
+			small {
+				display: block;
+				font-size: 42px;
+				font-weight: 100;
+				line-height: 1;
+			}
+			span {
+				display: block;
+				margin-top: 10px;
+			}
+		}
+
+		.call-to-action {
+			margin-top: 20px;
+			margin-bottom: 10px;
+			a {
+				margin-right: 10px;
+				margin-bottom: 10px;
+			}
+		}
+		.social-links {
+			a {
+				text-decoration: none;
+			}
+			img {
+				width: 48px;
+				height: 48px;
+			}
+		}
 	}
 	.hero-yellow {
 		flex: 1;
