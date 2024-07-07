@@ -446,6 +446,9 @@ h3 {
 						&:hover {
 							border-left: 5px solid #000f38;
 						}
+						&:focus {
+							border-left: 5px solid #000f38;
+						}
 					}
 					.textarea {
 						width: 100%;
@@ -463,6 +466,9 @@ h3 {
 						transition: all 0.2s ease-in-out;
 						border-radius: 8px;
 						&:hover {
+							border-left: 5px solid #000f38;
+						}
+						&:focus {
 							border-left: 5px solid #000f38;
 						}
 					}
@@ -483,6 +489,13 @@ h3 {
 								background-color: transparent;
 								border: 2px solid rgb(7, 38, 72);
 								color: #000711;
+								cursor: pointer;
+							}
+							&:focus {
+								background-color: transparent;
+								border: 2px solid rgb(7, 38, 72);
+								color: #000711;
+								cursor: pointer;
 							}
 						}
 					}
