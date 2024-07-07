@@ -26,6 +26,8 @@ body {
 	font-optical-sizing: auto;
 	font-style: normal;
 	font-size: 20px;
+	/* ToDo: to remove this */
+	margin-bottom: 1000px;
 }
 
 /* ----------------------- header part style ------------------------- */
@@ -302,6 +304,121 @@ h3 {
 		}
 		@media (max-width: 1024px) {
 			flex-direction: column;
+		}
+	}
+}
+.work-experience {
+	.jobs {
+		display: flex;
+		gap: 30px;
+		@media (max-width: 1024px) {
+			flex-direction: column;
+		}
+		article {
+			background-color: var(--yellow-100);
+			padding: 30px;
+			border-radius: 30px;
+			flex: 1;
+		}
+		h3 {
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		.teck-stack {
+			h4 {
+				font-size: 22px;
+				margin: 10px 0px;
+			}
+			ul {
+				display: flex;
+				flex-wrap: wrap;
+				list-style-type: none;
+				gap: 5px;
+				margin-right: 5px;
+				margin-bottom: 5px;
+				li {
+					display: inline-block;
+					background-color: var(--blue-400);
+					padding: 8px;
+					border-radius: 15px;
+					margin-bottom: 5px;
+				}
+			}
+		}
+		p {
+			margin-bottom: 10px;
+		}
+		figure {
+			width: 100%;
+			padding-top: 56.25%;
+			overflow: hidden;
+			position: relative;
+			border-radius: 15px;
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				object-fit: fill;
+				border-radius: 15px;
+				transition: ease 2s all;
+			}
+			figcaption {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background-color: rgba(0, 0, 0, 0.5);
+				color: var(--base-100);
+				text-align: center;
+				padding: 10px;
+				opacity: 0;
+				visibility: hidden;
+				transition: ease 1s all;
+			}
+			&:hover {
+				figcaption {
+					opacity: 1;
+					visibility: visible;
+				}
+				img {
+					scale: 1.1;
+				}
+			}
+		}
+	}
+}
+.contacts {
+	.contact-me {
+		background-color: var(--blue-100);
+		border-radius: 30px;
+		padding: 30px;
+		margin-bottom: 10px;
+		gap: 30px;
+		display: flex;
+		@media (max-width: 1024px) {
+			flex-direction: column;
+		}
+		p {
+			margin-bottom: 30px;
+		}
+		.contact-links {
+			flex: 3;
+			padding: 30px;
+			.social-links {
+				padding: 20px 30px 20px 10px;
+			}
+			.call-to-action {
+				a {
+					background-color: var(--base-800);
+					color: var(--base-100);
+				}
+			}
+		}
+		.contact-form {
+			flex: 4;
+			background-color: var(--yellow-100);
+			padding: 30px;
 		}
 	}
 }
