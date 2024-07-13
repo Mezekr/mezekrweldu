@@ -245,10 +245,9 @@ h1 {
 		display: flex;
 		justify-content: center;
 		align-items: stretch;
-		/* align-content: flex-end; */
 		img {
 			margin-top: -50px;
-			max-width: 150%;
+			max-width: 420px;
 			margin-bottom: -3px;
 		}
 	}
