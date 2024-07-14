@@ -47,6 +47,7 @@ header {
 	max-width: 1440px;
 	margin: auto;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	/* position: fixed; */
 
 	.logo-holder {
 		display: flex;
@@ -352,70 +353,130 @@ h3 {
 			@media (max-width: 1024px) {
 				width: 100%;
 			}
-		}
-		h3 {
-			margin-top: 20px;
-			margin-bottom: 20px;
-		}
-		.teck-stack {
-			h4 {
-				font-size: 22px;
-				margin: 10px 0px;
-			}
-			ul {
+			.project-detail {
 				display: flex;
-				flex-wrap: wrap;
-				list-style-type: none;
-				gap: 5px;
-				margin-right: 5px;
-				margin-bottom: 5px;
-				li {
-					display: inline-block;
-					background-color: var(--blue-400);
-					padding: 8px;
-					border-radius: 15px;
+				flex-direction: column;
+				justify-content: space-between;
+				align-content: flex-end;
+			}
+			h3 {
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+			.teck-stack {
+				h4 {
+					font-size: 22px;
+					margin: 10px 0px;
+				}
+				ul {
+					display: flex;
+					flex-wrap: wrap;
+					list-style-type: none;
+					gap: 5px;
+					margin-right: 5px;
 					margin-bottom: 5px;
+					li {
+						display: inline-block;
+						background-color: var(--blue-400);
+						padding: 8px;
+						border-radius: 15px;
+						margin-bottom: 5px;
+					}
 				}
 			}
-		}
-		p {
-			margin-bottom: 10px;
-		}
-		figure {
-			width: 100%;
-			padding-top: 56.25%;
-			overflow: hidden;
-			position: relative;
-			border-radius: 15px;
-			img {
-				position: absolute;
-				top: 0;
-				left: 0;
-				height: 100%;
-				object-fit: fill;
+			p {
+				margin-bottom: 10px;
+			}
+			.card_links {
+				/* margin-bottom: -3px; */
+				display: flex;
+				justify-content: space-between;
+				/* align-self: flex-end; */
+				.card_button {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					padding: 5px 10px;
+					gap: 10px;
+					background-color: var(--blue-800);
+					outline: 3px var(--blue-800) solid;
+					outline-offset: -3px;
+					border-radius: 5px;
+					border: none;
+					cursor: pointer;
+					transition: 400ms;
+					margin-top: 10px;
+					&:hover {
+						background-color: transparent;
+						.link {
+							color: var(--base-800);
+						}
+						path {
+							fill: var(--base-800);
+						}
+					}
+					.svg {
+						width: 27px;
+						height: 4px;
+						transform: translateY(15%);
+						fill: #323232;
+						path {
+							transition: 200ms;
+						}
+					}
+					.link {
+						color: white;
+						font-weight: 700;
+						font-size: 1em;
+						transition: 400ms;
+					}
+				}
+			}
+			figure {
+				width: 100%;
+				padding-top: 56.25%;
+				overflow: hidden;
+				position: relative;
 				border-radius: 15px;
-				transition: ease 2s all;
-			}
-			figcaption {
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				background-color: rgba(0, 0, 0, 0.5);
-				color: var(--base-100);
-				text-align: center;
-				padding: 10px;
-				opacity: 0;
-				visibility: hidden;
-				transition: ease 1s all;
-			}
-			&:hover {
-				figcaption {
-					opacity: 1;
-					visibility: visible;
-				}
 				img {
-					scale: 1.1;
+					position: absolute;
+					top: 0;
+					left: 0;
+					height: 100%;
+					object-fit: fill;
+					border-radius: 15px;
+					transition: ease 2s all;
+				}
+				video {
+					position: absolute;
+					top: 0;
+					left: 0;
+					height: 100%;
+					object-fit: contain;
+					border-radius: 15px;
+					transition: ease 2s all;
+				}
+				figcaption {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					background-color: rgba(0, 0, 0, 0.5);
+					color: var(--base-100);
+					text-align: center;
+					padding: 10px;
+					opacity: 0;
+					visibility: hidden;
+					transition: ease 1s all;
+				}
+				&:hover {
+					figcaption {
+						opacity: 1;
+						visibility: visible;
+					}
+					img {
+						scale: 1.1;
+					}
 				}
 			}
 		}
