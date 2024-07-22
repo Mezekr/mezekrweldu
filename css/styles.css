@@ -248,9 +248,9 @@ h1 {
 		justify-content: center;
 		align-items: stretch;
 		img {
-			margin-top: -50px;
+			/* margin-top: -50px; */
 			max-width: 420px;
-			margin-bottom: -3px;
+			/* margin-bottom: -3px; */
 		}
 	}
 }
@@ -356,7 +356,6 @@ h3 {
 		align-content: center;
 		gap: 2em;
 		flex-wrap: wrap;
-		/* width: 100%; */
 		@media (max-width: 1024px) {
 			flex-direction: column;
 		}
@@ -368,7 +367,6 @@ h3 {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-			/* align-content: flex-end;# */
 			@media (max-width: 1024px) {
 				width: 100%;
 			}
