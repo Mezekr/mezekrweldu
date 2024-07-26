@@ -26,8 +26,6 @@ body {
 	font-optical-sizing: auto;
 	font-style: normal;
 	font-size: 20px;
-	/* ToDo: to remove this */
-	/* margin-bottom: 1000px; */
 }
 
 /* ----------------------- header part style ------------------------- */
@@ -52,7 +50,6 @@ header {
 		display: flex;
 		padding: 10px;
 		align-items: center;
-		/* justify-content: center; */
 		font-weight: 600;
 		color: var(--base-800);
 		text-decoration: none;
@@ -248,9 +245,7 @@ h1 {
 		justify-content: center;
 		align-items: stretch;
 		img {
-			/* margin-top: -50px; */
 			max-width: 420px;
-			/* margin-bottom: -3px; */
 		}
 	}
 }
@@ -518,8 +513,7 @@ h3 {
 			flex: 3;
 			display: flex;
 			flex-direction: column;
-			padding: 30px;
-			justify-content: space-between;
+			justify-content: space-around;
 			align-content: space-between;
 			.contact-text {
 				p {
