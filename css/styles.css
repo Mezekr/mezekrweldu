@@ -21,6 +21,10 @@
 	--blue-800: #0a61ae;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Open Sans', 'Poppins', sans-serif;
 	font-optical-sizing: auto;
