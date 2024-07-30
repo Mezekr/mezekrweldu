@@ -453,17 +453,18 @@ h3 {
 				.card-links {
 					display: flex;
 					justify-content: space-between;
+					flex-wrap: wrap;
 					.card_button {
 						display: flex;
 						flex-direction: row;
 						justify-content: center;
 						align-items: center;
-						padding: 5px 10px;
-						gap: 10px;
+						padding: 8px;
+						gap: 3px;
 						background-color: var(--blue-800);
 						outline: 3px var(--blue-800) solid;
 						outline-offset: -3px;
-						border-radius: 5px;
+						border-radius: 10px;
 						border: none;
 						cursor: pointer;
 						transition: 400ms;
@@ -478,8 +479,8 @@ h3 {
 							}
 						}
 						.svg {
-							width: 27px;
-							height: 4px;
+							width: 24px;
+							/* height: 4px; */
 							transform: translateY(15%);
 							fill: #323232;
 							path {
@@ -493,6 +494,10 @@ h3 {
 							transition: 400ms;
 						}
 					}
+				}
+				.center-link {
+					display: flex;
+					justify-content: center;
 				}
 			}
 		}
