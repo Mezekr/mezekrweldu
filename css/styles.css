@@ -637,3 +637,28 @@ h3 {
 		}
 	}
 }
+
+.footer {
+	/* background-color: var(--yellow-100); */
+	padding: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1440px;
+	margin: 80px auto 10px;
+	border-top: 2px solid rgba(0, 0, 0, 0.1);
+	a {
+		text-decoration: none;
+		color: var(--base-800);
+		font-weight: 500;
+		&:hover {
+			color: #0a61ae;
+		}
+	}
+	.social-links {
+		img {
+			width: 36px;
+			height: 36px;
+		}
+	}
+}
