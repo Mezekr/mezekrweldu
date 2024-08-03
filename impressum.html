@@ -4,92 +4,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- <link rel="stylesheet" href="css/style.production.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Mezekr W. - Impressum</title>
 </head>
 
 <body>
-    <div class='impressum'>
-        <h1>Impressum</h1>
-        <h3>Allgemeine Angaben</h3>
-        <p><b>Internet:</b> <a href="https://mezekr.github.io/portfolio-website"
-                target="_blank">https://mezekr.github.io/portfolio-website</a>
-        </p>
+    <header>
+        <a href="index.html#Home" class="logo-holder">
+            <div class="logo">MW</div>
+            <div class="logo-text">Mezekr Weldu</div>
+        </a>
 
-        <p><b>Name des Diensteanbieters:</b> Mezekr Weldu <br><br></p>
+        <nav class="main-navigation">
+            <ul role="menubar" id="navigation-menu">
+                <li role="presentation">
+                    <a href="index.html#Home" role="menuitem">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="index.html#about" role="menuitem">About</a>
+                </li>
+                <li role="presentation"><a href="index.html#work"
+                        role="menuitem">Projects</a>
+                </li>
+                <li role="presentation"><a href="index.html#contact"
+                        role="menuitem">Contact</a>
+                </li>
+                <li role="presentation"><a
+                        href="mailto:mezekr.weldu@tutamail.com" role="menuitem"
+                        class="button">Contact me</a>
+                </li>
+            </ul>
+            <!-- toggle Mobile Menu-->
+            <a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white"
+                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round"
+                        stroke-width="2" d="M5 7h14M5 12h14M5 17h10" />
+                </svg>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <div class="impressum container">
+            <h2>Impressum</h2>
+            <h3>Allgemeine Angaben</h3>
+            <p><b>Internet:</b> <a
+                    href="https://mezekr.github.io/portfolio-website"
+                    target="_blank">https://mezekr.github.io/portfolio-website</a>
+            </p>
 
-        <h3>Anschrift und Kontakt:</h3>
-        <p>Am Bahnhof 9</p>
+            <p><b>Name des Diensteanbieters:</b> Mezekr Weldu <br><br></p>
 
-        <p>09599 Freiberg</p>
+            <h3>Anschrift und Kontakt:</h3>
+            <p>Am Bahnhof 9</p>
 
-        <p><b>Telefon:</b> <a href="tel:004917644546546">004917644546546</a></p>
+            <p>09599 Freiberg</p>
 
-        <p><b>Email:</b> <a
-                href="mailto:mezi.edu@tuta.io">mezi.edu@tuta.io</a><br><br></p>
+            <p><b>Telefon:</b> <a href="tel:004917644546546">004917644546546</a>
+            </p>
 
-        <h3>Haftung für Links</h3>
-        <p>Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren
-            Inhalte wir keinen Einfluss haben. Deshalb können wir für diese
-            fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der
-            verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber
-            der Seiten verantwortlich. Die verlinkten Seiten wurden zum
-            Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft.
-            Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht
-            erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten
-            Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung
-            nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir
-            derartige Links umgehend entfernen.</p>
+            <p><b>Email:</b> <a
+                    href="mailto:mezi.edu@tuta.io">mezi.edu@tuta.io</a><br><br>
+            </p>
 
-        <br>
-        <h3>Haftung für Inhalte</h3>
-        <p>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für
-            die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können
-            wir jedoch keine Gewähr übernehmen. Wir sind als Diensteanbieter
-            jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde
-            Informationen zu überwachen oder nach Umständen zu forschen, die auf
-            eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur
-            Entfernung oder Sperrung der Nutzung von Informationen nach den
-            allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche
-            Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer
-            konkreten Rechtsverletzung möglich. Bei Bekanntwerden von
-            entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend
-            entfernen.</p>
+            <h3>Haftung für Links</h3>
+            <p>Unser Angebot enthält Links zu externen Webseiten Dritter,
+                auf
+                deren
+                Inhalte wir keinen Einfluss haben. Deshalb können wir für
+                diese
+                fremden Inhalte auch keine Gewähr übernehmen. Für die
+                Inhalte
+                der
+                verlinkten Seiten ist stets der jeweilige Anbieter oder
+                Betreiber
+                der Seiten verantwortlich. Die verlinkten Seiten wurden zum
+                Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße
+                überprüft.
+                Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung
+                nicht
+                erkennbar. Eine permanente inhaltliche Kontrolle der
+                verlinkten
+                Seiten ist jedoch ohne konkrete Anhaltspunkte einer
+                Rechtsverletzung
+                nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen
+                werden
+                wir
+                derartige Links umgehend entfernen.</p>
 
-        <br>
-        <h3>Urheberrecht</h3>
-        <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen
-            Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung,
-            Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der
-            Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des
-            jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite
-            sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
-            Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt
-            wurden, werden die Urheberrechte Dritter beachtet. Insbesondere
-            werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie
-            trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten
-            wir um einen entsprechenden Hinweis. Bei Bekanntwerden von
-            Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
-        </p>
+            <br>
+            <h3>Haftung für Inhalte</h3>
+            <p>Die Inhalte unserer Seiten wurden mit größter Sorgfalt
+                erstellt.
+                Für
+                die Richtigkeit, Vollständigkeit und Aktualität der Inhalte
+                können
+                wir jedoch keine Gewähr übernehmen. Wir sind als
+                Diensteanbieter
+                jedoch nicht verpflichtet, übermittelte oder gespeicherte
+                fremde
+                Informationen zu überwachen oder nach Umständen zu forschen,
+                die
+                auf
+                eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur
+                Entfernung oder Sperrung der Nutzung von Informationen nach
+                den
+                allgemeinen Gesetzen bleiben hiervon unberührt. Eine
+                diesbezügliche
+                Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer
+                konkreten Rechtsverletzung möglich. Bei Bekanntwerden von
+                entsprechenden Rechtsverletzungen werden wir diese Inhalte
+                umgehend
+                entfernen.</p>
 
-        <h3>Datenschutz</h3><br><br>
-        Die Nutzung unserer Webseite ist in der Regel ohne Angabe
-        personenbezogener Daten möglich. Soweit auf unseren Seiten
-        personenbezogene Daten (beispielsweise Name, Anschrift oder
-        eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf
-        freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche
-        Zustimmung nicht an Dritte weitergegeben. <br>
-        Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei
-        der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein
-        lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht
-        möglich. <br>
-        Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten
-        Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich
-        angeforderter Werbung und Informationsmaterialien wird hiermit
-        ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich
-        ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von
-        Werbeinformationen, etwa durch Spam-Mails, vor.<br>
-    </div>
+            <br>
+            <h3>Urheberrecht</h3>
+            <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke
+                auf
+                diesen
+                Seiten unterliegen dem deutschen Urheberrecht. Die
+                Vervielfältigung,
+                Bearbeitung, Verbreitung und jede Art der Verwertung
+                außerhalb
+                der
+                Grenzen des Urheberrechtes bedürfen der schriftlichen
+                Zustimmung
+                des
+                jeweiligen Autors bzw. Erstellers. Downloads und Kopien
+                dieser
+                Seite
+                sind nur für den privaten, nicht kommerziellen Gebrauch
+                gestattet.
+                Soweit die Inhalte auf dieser Seite nicht vom Betreiber
+                erstellt
+                wurden, werden die Urheberrechte Dritter beachtet.
+                Insbesondere
+                werden Inhalte Dritter als solche gekennzeichnet. Sollten
+                Sie
+                trotzdem auf eine Urheberrechtsverletzung aufmerksam werden,
+                bitten
+                wir um einen entsprechenden Hinweis. Bei Bekanntwerden von
+                Rechtsverletzungen werden wir derartige Inhalte umgehend
+                entfernen.
+            </p>
+            <br>
+            <h3>Datenschutz</h3>
+            Die Nutzung unserer Webseite ist in der Regel ohne Angabe
+            personenbezogener Daten möglich. Soweit auf unseren Seiten
+            personenbezogene Daten (beispielsweise Name, Anschrift oder
+            eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich,
+            stets
+            auf
+            freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche
+            Zustimmung nicht an Dritte weitergegeben. <br>
+            Wir weisen darauf hin, dass die Datenübertragung im Internet
+            (z.B.
+            bei
+            der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann.
+            Ein
+            lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist
+            nicht
+            möglich. <br>
+            Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten
+            Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich
+            angeforderter Werbung und Informationsmaterialien wird hiermit
+            ausdrücklich widersprochen. Die Betreiber der Seiten behalten
+            sich
+            ausdrücklich rechtliche Schritte im Falle der unverlangten
+            Zusendung
+            von
+            Werbeinformationen, etwa durch Spam-Mails, vor.<br>
+        </div>
+    </main>
+    <footer class="footer">
 
+        <a href="#" class="logo-holder">
+            <div class="logo-text">Mezekr Weldu</div>
+        </a>
+
+        <div class="social-links">
+            <a href="https://github.com/Mezekr" target="_blank">
+                <img src="img/github_icon.svg" alt="github icon">
+            </a>
+            <a href="https://www.linkedin.com/in/mezekrweldu" target="_blank">
+                <img src="img/linkedin_icon.svg" alt="linked icon">
+            </a>
+        </div>
+        <a href="impressum.html" target="_self">Impressum</a>
+    </footer>
 </body>
 
 </html>
