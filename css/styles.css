@@ -40,6 +40,9 @@ a {
 		text-decoration: underline;
 	}
 }
+p {
+	text-align: justify;
+}
 
 header {
 	padding-top: 10px;
@@ -308,7 +311,6 @@ h3 {
 		@media (max-width: 425px) {
 			.skills-header {
 				height: auto;
-				background-color: aqua;
 			}
 		}
 		.left-column {
@@ -680,6 +682,12 @@ h3 {
 		img {
 			width: 48px;
 			height: 48px;
+		}
+		@media (max-width: 425px) {
+			img {
+				width: 24px;
+				height: 24px;
+			}
 		}
 	}
 }
