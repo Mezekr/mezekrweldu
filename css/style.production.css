@@ -20,7 +20,7 @@
 	--base-400: #555;
 	--base-800: #000;
 	--yellow: #ffda4b;
-	--yellow-100: #fffbe6;
+	--yellow-100: #f2ebc5;
 	--yellow-400: #ffda4b;
 	--yellow-800: #8b6f00;
 	--blue: #0a61ae;
@@ -47,6 +47,9 @@ a {
 	&:hover {
 		text-decoration: underline;
 	}
+}
+p {
+	text-align: justify;
 }
 
 header {
@@ -353,6 +356,23 @@ h3 {
 	color: var(--base-800);
 	margin-bottom: 20px;
 }
+.discription-box {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	gap: 3px;
+	small {
+		font-size: 1.2rem;
+		font-weight: 900;
+		margin: 10px 10px 20px 0px;
+	}
+}
 .skills {
 	.holder-blue {
 		background-color: var(--blue-100);
@@ -362,6 +382,16 @@ h3 {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
+		gap: 20px;
+		.skills-header {
+			height: 8rem;
+		}
+
+		@media (max-width: 425px) {
+			.skills-header {
+				height: auto;
+			}
+		}
 		.left-column {
 			-webkit-box-flex: 1;
 			-ms-flex: 1;
@@ -380,7 +410,7 @@ h3 {
 			-ms-flex-align: start;
 			align-items: flex-start;
 			p {
-				margin: 10px 10px 10px 10px;
+				margin: 10px 10px 20px 0px;
 			}
 			ul {
 				list-style-type: none;
@@ -429,7 +459,7 @@ h3 {
 						}
 						.experience-detail {
 							font-size: 0.9rem;
-							padding-left: 10px;
+							padding-bottom: 10px;
 						}
 					}
 				}
@@ -818,4 +848,45 @@ h3 {
 			}
 		}
 	}
+}
+
+.footer {
+	padding: 30px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	max-width: 1440px;
+	margin: 80px auto 10px;
+	border-top: 2px solid rgba(0, 0, 0, 0.1);
+	a {
+		text-decoration: none;
+		color: var(--base-800);
+		font-weight: 500;
+		&:hover {
+			color: #0a61ae;
+		}
+	}
+	.social-links {
+		img {
+			width: 48px;
+			height: 48px;
+		}
+		@media (max-width: 425px) {
+			img {
+				width: 24px;
+				height: 24px;
+			}
+		}
+	}
+}
+
+/* impressum page style  */
+.impressum {
+	padding: 30px;
 }
