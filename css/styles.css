@@ -330,9 +330,10 @@ h3 {
 				li {
 					display: inline-block;
 					background-color: var(--blue-400);
-					padding: 5px 10px;
-					border-radius: 10px;
+					padding: 3px 8px;
+					border-radius: 8px;
 					margin-bottom: 8px;
+					font-size: 0.75em;
 				}
 			}
 		}
@@ -465,13 +466,18 @@ h3 {
 						list-style-type: none;
 						gap: 5px;
 						margin-right: 5px;
-						margin-bottom: 5px;
+						margin-bottom: 3px;
+						justify-content: start;
+						justify-items: center;
+
 						li {
 							display: inline-block;
 							background-color: var(--blue-400);
-							padding: 5px 10px;
+							padding: 3px 8px;
 							border-radius: 10px;
 							margin-bottom: 5px;
+							text-align: center;
+							font-size: 0.75em;
 						}
 					}
 				}
