@@ -44,6 +44,23 @@ p {
 	text-align: justify;
 }
 
+.container {
+	max-width: 1440px;
+	margin: auto;
+	gap: 30px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+	@media (max-width: 1440px) {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	@media (max-width: 425px) {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+
 header {
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -136,23 +153,6 @@ header {
 				}
 			}
 		}
-	}
-}
-
-.container {
-	max-width: 1440px;
-	margin: auto;
-	gap: 30px;
-	margin-top: 30px;
-	margin-bottom: 30px;
-
-	@media (max-width: 1440px) {
-		padding-left: 30px;
-		padding-right: 30px;
-	}
-	@media (max-width: 425px) {
-		padding-left: 5px;
-		padding-right: 5px;
 	}
 }
 
@@ -301,11 +301,11 @@ h3 {
 		background-color: var(--blue-100);
 		border-radius: 30px;
 		padding: 30px;
-		margin-bottom: 10px;
+		margin-bottom: 1em;
 		display: flex;
 		gap: 20px;
 		.skills-header {
-			height: 8rem;
+			height: 7em;
 		}
 
 		@media (max-width: 425px) {
@@ -378,19 +378,17 @@ h3 {
 }
 .work-experience {
 	.jobs {
-		display: flex;
-		justify-content: space-around;
-		align-content: center;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
 		gap: 2em;
-		flex-wrap: wrap;
+
 		@media (max-width: 1024px) {
-			flex-direction: column;
+			grid-auto-flow: columns;
 		}
 		article {
 			background-color: var(--yellow-100);
 			padding: 30px;
 			border-radius: 30px;
-			width: 450px;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
@@ -482,6 +480,9 @@ h3 {
 					display: flex;
 					justify-content: space-between;
 					flex-wrap: wrap;
+					@media (max-width: 427px) {
+						flex-direction: column;
+					}
 					.card_button {
 						display: flex;
 						flex-direction: row;
