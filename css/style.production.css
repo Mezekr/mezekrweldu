@@ -384,7 +384,7 @@ h3 {
 		display: flex;
 		gap: 20px;
 		.skills-header {
-			height: 7em;
+/* 			height: 7em; */
 		}
 
 		@media (max-width: 425px) {
