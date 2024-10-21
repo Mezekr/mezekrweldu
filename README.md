@@ -1,6 +1,6 @@
 # Mezekr Portfolio website
 
-Personal web site portfolio with the following contentcontent:
+Personal portfolio website with the following content:
 
 ### index page
 
@@ -20,7 +20,8 @@ Personal web site portfolio with the following contentcontent:
 
 ### Teck stack
 
-This page is a static web site created with
+This page is a static web site created with.
 
 -   HtML
 -   CSS
+-   Javascript
