@@ -237,7 +237,7 @@ header {
 h1 {
 	font-size: 64px;
 	line-height: 1;
-	margin-bottom: 10px;
+	margin: 0 auto 0.5rem auto;
 	small {
 		display: block;
 		font-weight: 100;
@@ -327,7 +327,8 @@ h1 {
 		-ms-flex-align: stretch;
 		align-items: stretch;
 		img {
-			max-width: 420px;
+			max-width: 100%;
+			height: 100%;
 		}
 	}
 }
@@ -383,9 +384,6 @@ h3 {
 		display: -ms-flexbox;
 		display: flex;
 		gap: 20px;
-		.skills-header {
-/* 			height: 7em; */
-		}
 
 		@media (max-width: 425px) {
 			.skills-header {
