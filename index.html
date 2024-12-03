@@ -13,8 +13,8 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="css/style.production.css">
-    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <!-- <link rel="stylesheet" href="css/style.production.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
     <script src="js/scripts.js" defer></script>
 
 </head>
@@ -30,24 +30,26 @@
         <nav class="main-navigation">
             <ul role="menubar" id="navigation-menu">
                 <li role="presentation">
-                    <a href="#" role="menuitem">Home</a>
+                    <a href="#" role="menuitem"
+                        onClick="hideMobileMenu()">Home</a>
                 </li>
                 <li role="presentation">
-                    <a href="#about" role="menuitem">About</a>
+                    <a href="#about" role="menuitem"
+                        onClick="hideMobileMenu()">About</a>
                 </li>
-                <li role="presentation"><a href="#work"
-                        role="menuitem">Projects</a>
+                <li role="presentation"><a href="#work" role="menuitem"
+                        onClick="hideMobileMenu()">Projects</a>
                 </li>
-                <li role="presentation"><a href="#contact"
-                        role="menuitem">Contact</a>
+                <li role="presentation"><a href="#contact" role="menuitem"
+                        onClick="hideMobileMenu()">Contact</a>
                 </li>
                 <li role="presentation"><a
                         href="mailto:mezekr.weldu@tutamail.com" role="menuitem"
-                        class="button">Contact me</a>
+                        class="button" onClick="hideMobileMenu()">Contact me</a>
                 </li>
             </ul>
             <!-- toggle Mobile Menu-->
-            <a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">
+            <a href="#" class="mobile-toggle" onClick="toggleMobileMenu()">
                 <svg class="w-6 h-6 text-gray-800 dark:text-white"
                     aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                     width="24" height="24" fill="none" viewBox="0 0 24 24">
