@@ -23,6 +23,7 @@
 
 html {
 	scroll-behavior: smooth;
+	scroll-padding-top: var(--scroll-padding, 100px);
 }
 
 body {
@@ -62,8 +63,14 @@ p {
 }
 
 header {
-	padding-top: 10px;
-	padding-bottom: 10px;
+	position: sticky;
+	top: 0;
+	overflow: hidden;
+	z-index: 99;
+	background-color: #ffffff;
+	transition: 0.4s;
+	padding-top: 1px;
+	padding-bottom: 2px;
 	display: flex;
 	justify-content: space-between;
 	max-width: 1440px;
