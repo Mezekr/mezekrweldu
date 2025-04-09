@@ -1,14 +1,6 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 *,
 *::before,
 *::after {
-	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -76,35 +68,23 @@ header {
 	overflow: hidden;
 	z-index: 99;
 	background-color: #ffffff;
-	-webkit-transition: 0.4s;
-	-o-transition: 0.4s;
 	transition: 0.4s;
 	padding-top: 1px;
 	padding-bottom: 2px;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
 	justify-content: space-between;
 	max-width: 1440px;
 	margin: auto;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
 	.logo-holder {
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
 		padding: 10px;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
 		align-items: center;
 		font-weight: 600;
 		color: var(--base-800);
 		text-decoration: none;
 		.logo {
-			display: -webkit-box;
-			display: -ms-flexbox;
 			display: flex;
 			height: 64px;
 			width: 64px;
@@ -112,34 +92,20 @@ header {
 			font-size: 32px;
 			margin-right: 20px;
 			border-radius: 50%;
-			-webkit-box-align: center;
-			-ms-flex-align: center;
 			align-items: center;
-			-webkit-box-pack: center;
-			-ms-flex-pack: center;
 			justify-content: center;
 			background-color: var(--base-800);
 		}
 		.logo-text {
-			-webkit-box-flex: 1;
-			-ms-flex: 1;
 			flex: 1;
 		}
 	}
 	nav {
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
 		align-items: center;
-		-webkit-box-pack: center;
-		-ms-flex-pack: center;
 		justify-content: center;
 
 		ul {
-			display: -webkit-box;
-			display: -ms-flexbox;
 			display: flex;
 			list-style-type: none;
 			gap: 5px;
@@ -171,37 +137,22 @@ header {
 		}
 	}
 	@media (max-width: 1024px) {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: column;
 		flex-direction: column;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
 		align-items: center;
 	}
 
 	@media (max-width: 768px) {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: column;
 		flex-direction: column;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
 		align-items: center;
 		nav {
 			margin: 10px;
 			width: 100%;
 			ul {
 				display: none;
-				-webkit-box-orient: vertical;
-				-webkit-box-direction: normal;
-				-ms-flex-direction: column;
 				flex-direction: column;
 				text-align: center;
 				width: 100%;
 				&.active {
-					display: -webkit-box;
-					display: -ms-flexbox;
 					display: flex;
 				}
 				a {
@@ -218,8 +169,6 @@ header {
 	color: var(--base-100);
 	padding: 10px 30px;
 	border-radius: 10px;
-	-webkit-transition: ease 0.2s all;
-	-o-transition: ease 0.2s all;
 	transition: ease 0.2s all;
 	&:hover {
 		text-decoration: none;
@@ -257,35 +206,21 @@ h1 {
 	}
 }
 .hero {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	margin-bottom: 30px;
 
 	/* to stack the hero section elements */
 	@media (max-width: 1024px) {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: column;
 		flex-direction: column;
 	}
 
 	.hero-blue {
-		-webkit-box-flex: 1;
-		-ms-flex: 1;
 		flex: 1;
 		background-color: var(--blue-100);
 		border-radius: 30px;
 		padding: 30px;
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: column;
 		flex-direction: column;
-		-webkit-box-pack: center;
-		-ms-flex-pack: center;
 		justify-content: center;
 		p {
 			small {
@@ -321,20 +256,12 @@ h1 {
 		}
 	}
 	.hero-yellow {
-		-webkit-box-flex: 1;
-		-ms-flex: 1;
 		flex: 1;
 		background-color: var(--yellow);
 		border-radius: 30px;
 		padding: 0 15px;
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-pack: center;
-		-ms-flex-pack: center;
 		justify-content: center;
-		-webkit-box-align: end;
-		-ms-flex-align: end;
 		align-items: flex-end;
 		img {
 			max-width: 425px;
@@ -366,15 +293,9 @@ h3 {
 	color: var(--base-800);
 	margin-bottom: 20px;
 }
-.discription-box {
-	display: -webkit-box;
-	display: -ms-flexbox;
+.description-box {
 	display: flex;
-	-webkit-box-pack: start;
-	-ms-flex-pack: start;
 	justify-content: flex-start;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
 	gap: 3px;
 	small {
@@ -384,37 +305,41 @@ h3 {
 	}
 }
 .skills {
-	.holder-blue {
-		background-color: var(--blue-100);
-		border-radius: 30px;
-		padding: 30px;
-		margin-bottom: 1em;
-		display: -webkit-box;
-		display: -ms-flexbox;
+	.career_wrapper {
 		display: flex;
-		gap: 20px;
+		gap: 30px;
 
 		@media (max-width: 425px) {
 			.skills-header {
 				height: auto;
 			}
 		}
-		.left-column {
-			-webkit-box-flex: 1;
-			-ms-flex: 1;
+		.career-column {
 			flex: 1;
-			display: -webkit-box;
-			display: -ms-flexbox;
+			border-radius: 30px;
+			padding: 30px;
+			margin-bottom: 10px;
+			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+			text-align: center;
+			background-color: #fbfbfb;
+			&:nth-child(1) {
+				background-color: var(--yellow-100);
+			}
+			&:nth-child(2) {
+				background-color: var(--blue-100);
+			}
+		}
+		@media (max-width: 1024px) {
+			.career-column {
+				width: 100%;
+			}
+		}
+
+		.left-column {
+			flex: 1;
 			display: flex;
-			-webkit-box-orient: vertical;
-			-webkit-box-direction: normal;
-			-ms-flex-direction: column;
 			flex-direction: column;
-			-webkit-box-pack: justify;
-			-ms-flex-pack: justify;
 			justify-content: space-between;
-			-webkit-box-align: start;
-			-ms-flex-align: start;
 			align-items: flex-start;
 			p {
 				margin: 10px 10px 20px 0px;
@@ -435,20 +360,10 @@ h3 {
 			}
 		}
 		.right-column {
-			-webkit-box-flex: 1;
-			-ms-flex: 1;
 			flex: 1;
-			display: -webkit-box;
-			display: -ms-flexbox;
 			display: flex;
-			-webkit-box-orient: vertical;
-			-webkit-box-direction: normal;
-			-ms-flex-direction: column;
 			flex-direction: column;
-			-webkit-box-pack: justify;
-			-ms-flex-pack: justify;
 			justify-content: space-between;
-			-ms-flex-line-pack: center;
 			align-content: center;
 			.career {
 				padding: 10px 0;
@@ -472,24 +387,14 @@ h3 {
 					}
 				}
 			}
-			@media (max-width: 1024px) {
-				background-color: var(--yellow);
-				margin: 30px -30px -30px;
-				border-radius: 0 0 30px 30px;
-				padding: 30px;
-			}
 		}
 		@media (max-width: 1024px) {
-			-webkit-box-orient: vertical;
-			-webkit-box-direction: normal;
-			-ms-flex-direction: column;
 			flex-direction: column;
 		}
 	}
 }
 .work-experience {
 	.jobs {
-		display: -ms-grid;
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
 		gap: 2em;
@@ -501,15 +406,8 @@ h3 {
 			background-color: var(--yellow-100);
 			padding: 30px;
 			border-radius: 30px;
-			display: -webkit-box;
-			display: -ms-flexbox;
 			display: flex;
-			-webkit-box-orient: vertical;
-			-webkit-box-direction: normal;
-			-ms-flex-direction: column;
 			flex-direction: column;
-			-webkit-box-pack: justify;
-			-ms-flex-pack: justify;
 			justify-content: space-between;
 			@media (max-width: 1024px) {
 				width: 100%;
@@ -525,11 +423,8 @@ h3 {
 					top: 0;
 					left: 0;
 					height: 100%;
-					-o-object-fit: fill;
 					object-fit: fill;
 					border-radius: 15px;
-					-webkit-transition: ease 2s all;
-					-o-transition: ease 2s all;
 					transition: ease 2s all;
 				}
 				video {
@@ -537,11 +432,8 @@ h3 {
 					top: 0;
 					left: 0;
 					height: 100%;
-					-o-object-fit: contain;
 					object-fit: contain;
 					border-radius: 15px;
-					-webkit-transition: ease 2s all;
-					-o-transition: ease 2s all;
 					transition: ease 2s all;
 				}
 				figcaption {
@@ -555,8 +447,6 @@ h3 {
 					padding: 10px;
 					opacity: 0;
 					visibility: hidden;
-					-webkit-transition: ease 1s all;
-					-o-transition: ease 1s all;
 					transition: ease 1s all;
 				}
 				&:hover {
@@ -570,18 +460,9 @@ h3 {
 				}
 			}
 			.project-detail {
-				-webkit-box-flex: 1;
-				-ms-flex: 1;
 				flex: 1;
-				display: -webkit-box;
-				display: -ms-flexbox;
 				display: flex;
-				-webkit-box-orient: vertical;
-				-webkit-box-direction: normal;
-				-ms-flex-direction: column;
 				flex-direction: column;
-				-webkit-box-pack: justify;
-				-ms-flex-pack: justify;
 				justify-content: space-between;
 				h3 {
 					margin-top: 20px;
@@ -596,17 +477,12 @@ h3 {
 						margin: 10px 0px;
 					}
 					ul {
-						display: -webkit-box;
-						display: -ms-flexbox;
 						display: flex;
-						-ms-flex-wrap: wrap;
 						flex-wrap: wrap;
 						list-style-type: none;
 						gap: 5px;
 						margin-right: 5px;
 						margin-bottom: 3px;
-						-webkit-box-pack: start;
-						-ms-flex-pack: start;
 						justify-content: start;
 						justify-items: center;
 
@@ -623,33 +499,16 @@ h3 {
 				}
 
 				.card-links {
-					display: -webkit-box;
-					display: -ms-flexbox;
 					display: flex;
-					-webkit-box-pack: justify;
-					-ms-flex-pack: justify;
 					justify-content: space-between;
-					-ms-flex-wrap: wrap;
 					flex-wrap: wrap;
 					@media (max-width: 427px) {
-						-webkit-box-orient: vertical;
-						-webkit-box-direction: normal;
-						-ms-flex-direction: column;
 						flex-direction: column;
 					}
 					.card_button {
-						display: -webkit-box;
-						display: -ms-flexbox;
 						display: flex;
-						-webkit-box-orient: horizontal;
-						-webkit-box-direction: normal;
-						-ms-flex-direction: row;
 						flex-direction: row;
-						-webkit-box-pack: center;
-						-ms-flex-pack: center;
 						justify-content: center;
-						-webkit-box-align: center;
-						-ms-flex-align: center;
 						align-items: center;
 						padding: 8px;
 						gap: 3px;
@@ -659,8 +518,6 @@ h3 {
 						border-radius: 10px;
 						border: none;
 						cursor: pointer;
-						-webkit-transition: 400ms;
-						-o-transition: 400ms;
 						transition: 400ms;
 						margin-top: 10px;
 						&:hover {
@@ -675,13 +532,9 @@ h3 {
 						.svg {
 							width: 24px;
 							height: 4px;
-							-webkit-transform: translateY(15%);
-							-ms-transform: translateY(15%);
 							transform: translateY(15%);
 							fill: #323232;
 							path {
-								-webkit-transition: 200ms;
-								-o-transition: 200ms;
 								transition: 200ms;
 							}
 						}
@@ -689,18 +542,12 @@ h3 {
 							color: white;
 							font-weight: 700;
 							font-size: 1em;
-							-webkit-transition: 400ms;
-							-o-transition: 400ms;
 							transition: 400ms;
 						}
 					}
 				}
 				.center-link {
-					display: -webkit-box;
-					display: -ms-flexbox;
 					display: flex;
-					-webkit-box-pack: center;
-					-ms-flex-pack: center;
 					justify-content: center;
 				}
 			}
@@ -714,13 +561,8 @@ h3 {
 		padding: 30px;
 		margin-bottom: 10px;
 		gap: 30px;
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
 		@media (max-width: 1024px) {
-			-webkit-box-orient: vertical;
-			-webkit-box-direction: normal;
-			-ms-flex-direction: column;
 			flex-direction: column;
 		}
 		p {
@@ -728,19 +570,10 @@ h3 {
 		}
 
 		.contact-links {
-			-webkit-box-flex: 3;
-			-ms-flex: 3;
 			flex: 3;
-			display: -webkit-box;
-			display: -ms-flexbox;
 			display: flex;
-			-webkit-box-orient: vertical;
-			-webkit-box-direction: normal;
-			-ms-flex-direction: column;
 			flex-direction: column;
-			-ms-flex-pack: distribute;
 			justify-content: space-around;
-			-ms-flex-line-pack: justify;
 			align-content: space-between;
 			.contact-text {
 				p {
@@ -766,8 +599,6 @@ h3 {
 			}
 		}
 		.contact-form {
-			-webkit-box-flex: 4;
-			-ms-flex: 4;
 			flex: 4;
 			background-color: var(--yellow-100);
 			padding: 10px 3px;
@@ -790,8 +621,6 @@ h3 {
 						padding: 15px;
 						margin-bottom: 20px;
 						border-radius: 8px;
-						-webkit-transition: all 0.2s ease-in-out;
-						-o-transition: all 0.2s ease-in-out;
 						transition: all 0.2s ease-in-out;
 						border-left: 1px solid transparent;
 						&:hover {
@@ -814,8 +643,6 @@ h3 {
 						overflow-y: scroll;
 						margin-bottom: 20px;
 						border-left: 1px solid transparent;
-						-webkit-transition: all 0.2s ease-in-out;
-						-o-transition: all 0.2s ease-in-out;
 						transition: all 0.2s ease-in-out;
 						border-radius: 8px;
 						&:hover {
@@ -828,15 +655,11 @@ h3 {
 					.button-container {
 						display: block;
 						.send-button {
-							-webkit-box-flex: 7;
-							-ms-flex: 7;
 							flex: 7;
 							background: rgb(7, 38, 72);
 							color: rgb(253, 253, 253);
 							text-align: center;
 							border: 1px solid transparent;
-							-webkit-transition: all 0.2s ease-in-out;
-							-o-transition: all 0.2s ease-in-out;
 							transition: all 0.2s ease-in-out;
 							border-radius: 20px;
 							width: 100%;
@@ -864,14 +687,8 @@ h3 {
 
 .footer {
 	padding: 30px;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
 	justify-content: space-between;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
 	max-width: 1440px;
 	margin: 80px auto 10px;
