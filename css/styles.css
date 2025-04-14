@@ -10,6 +10,7 @@
 	--base: #555;
 	--base-100: #f1f1f1;
 	--base-400: #555;
+	--base-500: #38383a;
 	--base-800: #000;
 	--yellow: #ffda4b;
 	--yellow-100: #f2ebc5;
@@ -234,6 +235,10 @@ h1 {
 			span {
 				display: block;
 				margin-top: 10px;
+				line-height: 1.4;
+				font-size: 0.91rem;
+				font-weight: 500;
+				color: var(--base-500);
 			}
 		}
 
