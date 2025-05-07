@@ -724,3 +724,100 @@ h3 {
 .impressum {
 	padding: 30px;
 }
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+	position: relative;
+	/* max-width: 1444px; */
+	margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+	content: '';
+	position: absolute;
+	width: 4px;
+	background-color: rgb(11, 11, 11);
+	top: 0;
+	bottom: 0;
+	left: 0px;
+	margin-left: -1px;
+}
+
+/* Container around content */
+.career_container {
+	padding: 2px 2px 2px 25px;
+	position: relative;
+	background-color: inherit;
+	width: 100%;
+}
+
+/* The circles on the timeline */
+.career_container::after {
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	right: -16px;
+	background-color: rgb(241, 238, 238);
+	border: 2px solid #0d0a08;
+	top: 10px;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+	content: ' ';
+	height: 0;
+	position: absolute;
+	top: 5px;
+	width: 0;
+	z-index: 1;
+	left: 16px;
+	border: medium solid white;
+	border-width: 10px 10px 10px 0;
+	border-color: transparent rgb(21, 3, 3) transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+	left: -4px;
+}
+
+/* The actual content */
+.content {
+	padding: 1px 10px;
+	background-color: rgb(116, 144, 152);
+	position: relative;
+	border-radius: 6px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: left;
+	justify-content: center;
+
+	span {
+		display: block;
+		text-align: left;
+		padding: 1px 0;
+
+		&.period {
+			padding: 2px 0;
+			margin: 3px 0 1px 0;
+		}
+
+		&.role {
+			font-weight: 600;
+		}
+
+		&.company_name {
+			font-weight: 500;
+			padding: 0px;
+		}
+	}
+
+	.job_description {
+		margin: 8px 0;
+	}
+}
