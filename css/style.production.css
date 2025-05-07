@@ -27,7 +27,9 @@
 	--blue: #0a61ae;
 	--blue-100: #e2f8ff;
 	--blue-400: #61dafb;
+	--blue-600: #ceedf6;
 	--blue-800: #0a61ae;
+	--gold-800: #f8b706;
 }
 
 html {
@@ -365,11 +367,12 @@ h2 {
 	}
 }
 h3 {
-	font-size: 32px;
+	font-size: 28px;
 	font-weight: 600;
 	line-height: 1;
 	color: var(--base-800);
-	margin-bottom: 20px;
+	margin-top: 5px;
+	margin-bottom: 10px;
 }
 .description-box {
 	display: -webkit-box;
@@ -381,11 +384,12 @@ h3 {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	gap: 3px;
+	border-left: 8px solid var(--gold-800);
+	padding: 0px 5px;
 	small {
 		font-size: 1.2rem;
 		font-weight: 900;
-		margin: 10px 10px 20px 0px;
+		margin: 6px 10px 10px 0px;
 	}
 }
 .skills {
@@ -441,20 +445,25 @@ h3 {
 			-webkit-box-align: start;
 			-ms-flex-align: start;
 			align-items: flex-start;
+			.skills-header {
+				padding: 10px;
+			}
 			p {
-				margin: 10px 10px 20px 0px;
+				margin: 6px 0px 10px 0px;
 			}
 			ul {
 				list-style-type: none;
-				gap: 10px;
-				margin-right: 10px;
-				margin-bottom: 20px;
+				gap: 5px;
+				margin-top: 15px;
+				margin-bottom: 15px;
+				text-align: justify;
+
 				li {
 					display: inline-block;
 					background-color: var(--blue-400);
-					padding: 3px 8px;
-					border-radius: 8px;
-					margin-bottom: 8px;
+					padding: 5px 10px;
+					border-radius: 10px;
+					margin-bottom: 10px;
 					font-size: 0.75em;
 				}
 			}
@@ -920,4 +929,115 @@ h3 {
 /* impressum page style  */
 .impressum {
 	padding: 30px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+	position: relative;
+	max-width: 722px;
+	margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+	content: '';
+	position: absolute;
+	width: 4px;
+	background-color: rgb(11, 11, 11);
+	top: 15px;
+	bottom: 0;
+	left: 0px;
+	margin-left: -1px;
+}
+
+/* Container around content */
+.career_container {
+	padding: 2px 2px 10px 25px;
+	position: relative;
+	background-color: inherit;
+	width: 100%;
+}
+
+/* The circles on the timeline */
+.career_container::after {
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	right: -16px;
+	background-color: var(--gold-800);
+	border: 2px solid #0d0a08;
+	top: 12px;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+	content: ' ';
+	height: 0;
+	position: absolute;
+	top: 10px;
+	width: 0;
+	z-index: 1;
+	left: 16px;
+	border: medium solid white;
+	border-width: 10px 10px 10px 0;
+	border-color: transparent rgb(21, 3, 3) transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+	left: -6px;
+}
+
+/* The actual content */
+.content {
+	padding: 1px 10px;
+	background-color: inherit;
+	position: relative;
+	border-radius: 10px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-align: left;
+	-ms-flex-align: left;
+	align-items: left;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	background-color: var(--blue-600);
+
+	span {
+		display: block;
+		text-align: left;
+		padding: 1px 0;
+
+		&.period {
+			padding: 2px 0;
+			margin: 3px 0 1px 0;
+		}
+
+		&.role {
+			font-weight: 600;
+		}
+
+		&.company_name {
+			font-weight: 500;
+			padding: 0px;
+		}
+	}
+
+	.job_description {
+		margin: 8px 0;
+		border-left: 5px solid var(--gold-800);
+		padding: 5px;
+	}
 }
